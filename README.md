@@ -19,17 +19,11 @@ for chunk in stream:
     if chunk.choices[0].delta.content is not None:
         print(chunk.choices[0].delta.content, end="")
 
-
-
-
-
-
 FUNCTION/TOOLS CALLING
 Connect models to external data and systems.
 Function calling enables developers to connect language models to external data and systems. You can define a set of functions as tools that the model has access to, and it can use them when appropriate based on the conversation history. You can then execute those functions on the application side, and provide results back to the model.
 
 OVERVIEW:
-
 
 Many applications require models to call custom functions to trigger actions within the application or interact with external systems.
 Here is how you can define a function as a tool for the model to use:
